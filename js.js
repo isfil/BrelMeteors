@@ -50,6 +50,7 @@ function blueMeteor(square) {
             $(square).addClass("yellow")
         }
     }
+    bluetimer();
 }
 
 function yellowMeteor(square) {
@@ -163,11 +164,14 @@ function bluetimer(){
     var sec = 60;
     globalThis.bluetimez = setInterval(function(){
         document.getElementById('blueTimer').innerHTML='Next Blues in: '+sec;
+        $(".numberOfBlues").show()
+        $(".numberOfBlues").text("Next Number Of meteors " + globalThis.NBlueMeteor);
         sec--;
         if (sec < 0) {
             clearInterval(globalThis.bluetimez);
             document.getElementById('blueTimer').innerHTML= globalThis.NBlueMeteor + ' Blue Meteors Incoming!!!';
             checkHowManyMeteors();
+            $(".numberOfBlues").hide();
         }
     }, 1000);
 }
