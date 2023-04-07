@@ -39,6 +39,11 @@ html,body{
 	color: white;
 }
 
+#blueTimer{
+	font-size: 40;
+	color: white;
+}
+
 .diamond p{
     display:block;
     position:absolute;
@@ -56,5 +61,10 @@ html,body{
 .mechanics {
 	font-size: 30;
 	color: white;
+}
+
+.info {
+	width:35%;
+	float:right;
 }
 
