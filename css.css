@@ -44,6 +44,11 @@ html,body{
 	color: white;
 }
 
+.numberOfBlues{
+	font-size: 20;
+	color: white;
+}
+
 .diamond p{
     display:block;
     position:absolute;
