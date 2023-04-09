@@ -161,7 +161,7 @@ function yellowtimer(){
 
 function bluetimer(){
     clearInterval(globalThis.bluetimez);
-    var sec = 60;
+    var sec = 50;
     globalThis.bluetimez = setInterval(function(){
         document.getElementById('blueTimer').innerHTML='Next Blues in: '+sec;
         $(".numberOfBlues").show()
